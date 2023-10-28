@@ -40,8 +40,8 @@ class LibraryInfoDiv {
 
         this.infoDiv.innerText = LibraryInfoStrings.poweredBy();
         const projectLink = document.createElement("a");
-        projectLink.innerText = "ScanApp";
-        projectLink.href = "https://scanapp.org";
+        projectLink.innerText = "Sherif";
+        projectLink.href = "https://notscanapp.org";
         projectLink.target = "new";
         projectLink.style.color = "white";
         this.infoDiv.appendChild(projectLink);
@@ -83,9 +83,9 @@ class LibraryInfoIcon {
 
         this.infoIcon = document.createElement("img");
     }
-    
+
     public renderInto(parent: HTMLElement) {
-        this.infoIcon.alt = "Info icon";
+        this.infoIcon.alt = "Info Icon";
         this.infoIcon.src = ASSET_INFO_ICON_16PX;
         this.infoIcon.style.position = "absolute";
         this.infoIcon.style.top = "4px";
@@ -143,7 +143,7 @@ export class LibraryInfoContainer {
             this.infoDiv.hide();
         });
     }
-    
+
     public renderInto(parent: HTMLElement) {
         this.infoDiv.renderInto(parent);
         this.infoIcon.renderInto(parent);
